@@ -23,7 +23,12 @@
             justify-content:space-around;
             width:900px;
             flex-direction:column; /*This will change the direction of the flex elements to be vertical instead of horizontal aka instead of being a row*/
+            flex-direction:row-reverse; /*This will change the direction of the flex elements to be horizontal but in reverse order*/
+
+            justify-self:center; /*This will align the flex elements to the center of the parent container*/
         }
+
+                                        /* flex start will align the items to the top just as in default, but if u put flex-end, itll position itself to the bottom */
 
         .one, .two, .three, .four{
             padding:20px;
@@ -40,6 +45,7 @@
 
         .two{
             background-color:rgb(46, 168, 229);
+            font-size:50px;
         }
 
         .three{
