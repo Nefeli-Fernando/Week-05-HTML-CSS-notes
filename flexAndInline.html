@@ -14,7 +14,10 @@
 
         .flexibox {
             border: 2px solid rgb(27, 4, 21);
-            display:inline-flex;      /*This makes the child elements display inline instead of block,if you use flex without the inle part itll go to the next line*/
+            display:flex;      /*inline-flex, This makes the child elements display inline instead of block,if you use flex without the inle part itll go to the next line*/
+            justify-content:center;  /*This will align the child elements to the right side of the parent container*/
+            justify-content:space-between; 
+            justify-content:space-around;
         }
 
         .one, .two, .three, .four{
