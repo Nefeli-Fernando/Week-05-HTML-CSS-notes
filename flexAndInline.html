@@ -14,18 +14,8 @@
 
         .flexibox {
             border: 2px solid rgb(27, 4, 21);
-            display:flex;      /*inline-flex, This makes the child elements display inline instead of block,if you use flex without the inle part itll go to the next line*/
-
-            justify-content:center;  /*This will align the child elements to the right side of the parent container*/
-
-            justify-content:flex-start; /* Aligns flex elements on the main axis of the current line */
-            justify-content:space-between; 
-            justify-content:space-around;
-            width:900px;
-            flex-direction:column; /*This will change the direction of the flex elements to be vertical instead of horizontal aka instead of being a row*/
-            flex-direction:row-reverse; /*This will change the direction of the flex elements to be horizontal but in reverse order*/
-
-            justify-self:center; /*This will align the flex elements to the center of the parent container*/
+            display:flex;
+            flex-wrap:wrap-reverse;     /* wraps the flex items in reverse order */
         }
 
         .flexii{
@@ -33,6 +23,7 @@
             display:flex;
             height:50px;
             align-items:baseline;
+            flex-wrap:wrap-reverse;
             /*align-items:normal;*/
         }
 
@@ -80,7 +71,7 @@
         <p class="three">Where</p>
         <p class="four">When</p>
 
-    </div>
+    <!---</div>
             <div class="flexii"> 
                 <p class="one">a</p>
                 <p class="two">b</p>
@@ -91,6 +82,6 @@
                 <p class="one">g</p>
                 <p class="four">h</p>
 
-    </div>
+    </div>-->
 </body>
 </html>
