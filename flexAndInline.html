@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            font-family:sans-serif;
+        }
+
+        .flexibox {
+            border: 2px solid rgb(27, 4, 21);
+            display:inline-flex;      /*This makes the child elements display inline instead of block,if you use flex without the inle part itll go to the next line*/
+        }
+
+        .one, .two, .three, .four{
+            padding:20px;
+            text-align:center;
+            font-size:36px;
+            color:rgb(2, 14, 23);
+            font-weight:bold;
+
+        }
+
+        .one{
+            background-color:rgb(118, 230, 27);
+        }
+
+        .two{
+            background-color:rgb(46, 168, 229);
+        }
+
+        .three{
+            background-color:blue;
+        }
+
+        .four{
+            background-color:yellow;
+        }
+        
+
+    </style>
+</head>
+<body>
+
+    <div class="flexibox">  <!--We normally add the flexbox to the parent as itll apply to its child values and then all will become inline instead of block elements-->
+        <p class="one">What</p>
+        <p class="two">Who</p>
+        <p class="three">Where</p>
+        <p class="four">When</p>
+
+    </div>
+            <div class="flexibox"> 
+                <p class="one">a</p>
+                <p class="two">b</p>
+                <p class="three">c</p>
+                <p class="four">d</p>
+
+    </div>
+</body>
+</html>
